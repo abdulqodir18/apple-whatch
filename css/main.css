@@ -1,0 +1,345 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+:root {
+  --color:rgba(39, 39, 39, 0.815);
+  --color-balck:rgba rgba(24, 24, 24, 0.815);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto","Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+  color: rgba(24, 24, 24, 0.815);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1040px;
+  max-width: 1040px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.site-header {
+
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+}
+.intro-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  padding: 50px 10px 50px 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo {
+  margin-right: auto;
+}
+.logo-img {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.logo-img:hover{
+  opacity: 0.9;
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-item {
+
+}
+.menu-link {
+  text-decoration: none;
+  color: rgba(34, 34, 34, 0.705);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 20px 30px;
+  position: relative;
+}
+.menu-link:hover{
+  color: #222;
+}
+.menu-link::after{
+  position: absolute;
+  top: 100%;
+  right: 50%;
+  transform: translateX(50%);
+  content: "";
+  display: block;
+  width: 75%;
+  height: 3px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+.menu-link:hover::after{
+  background-color: #222;
+}
+.menu-search {
+  border: 0;
+  padding: 0;
+  padding-bottom: 5px;
+  padding-left: 7px;
+  color: black;
+  outline: none;
+  border-bottom: 2px solid rgba(34, 34, 34, 0.747);
+}
+.site-main {
+  width: 100%;
+}
+
+.intro{
+  display: flex;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 140px 30px 220px 30px;
+  background-image: url("../img/watches.jpg");
+  background-size: contain;
+  background-position: calc(50% + 600px) center;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid rgba(44, 44, 44, 0.479);
+
+}
+.watch-section {
+  margin-right: auto;
+  width: 380px;
+}
+.watch-section-title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 26px;
+  font-weight: bold;
+  color: rgba(7, 7, 7, 0.74);
+
+}
+.watch-section-text {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(53, 53, 53, 0.719);
+  margin-bottom: 40px;
+  padding-left: 30px;
+  border-left: 2px solid  rgba(53, 53, 53, 0.719);
+}
+
+.watch-section-link {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 12px 20px;
+  background-color: rgba(255, 99, 71, 0.849);
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+.watch-section-link:hover{
+  background-color: tomato;
+}
+.section-nike {
+  background-color: #ffffff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.nike-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+}
+.nike-item {
+  text-decoration: none;
+  margin-left: 40px;
+  margin-right: 40px;
+  width: 245px;
+}
+.nike-item-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 45px;
+  color: var(--color-balck);
+  text-transform: uppercase;
+}
+.nike-item-text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  color: var(--color);
+}
+.nike-span {
+  display: flex;
+  align-items: center;
+}
+.nike-span::after{
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: var(--color);
+  display: inline-block;
+  margin-left: 10px;
+}
+.nike-span::before{
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: var(--color);
+  display: inline-block;
+  margin-right: 10px;
+}
+.nike-sapn-child {
+  width: 4px;
+  height: 4px;
+  background-color: var(--color);
+
+}
+.nike-link{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: tomato;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.nike-link::before{
+  display: inline-block;
+  content: "";
+  width: 30px;
+  height: 3px;
+  margin-right: 10px;
+  background-color: tomato;
+  transition: width 0.4s ease;
+}
+.nike-link:hover::before{
+  width: 50px;
+}
+.nike-sport {
+  padding: 35px;
+}
+.container-nike-sport{
+  display: flex;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 120px 0;
+  background-image: url("../img/preview.jpg");
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+.section-left {
+  margin-right: auto;
+  width: 380px;
+}
+.section-left-title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 26px;
+  font-weight: bold;
+  color: rgba(7, 7, 7, 0.74);
+  text-transform: uppercase;
+  width: 300px;
+}
+.section-left-text {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(53, 53, 53, 0.719);
+  margin-bottom: 40px;
+  padding-left: 30px;
+  border-left: 2px solid  rgba(53, 53, 53, 0.719);
+}
+.section-left-link {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 12px 20px;
+  background-color: rgba(255, 99, 71, 0.849);
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+.section-left-link:hover{
+  background-color: tomato;
+}
+.runners{
+  display: flex;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 140px 30px 220px 30px;
+  background-image: url("../img/runners.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.runners-section {
+  margin-left: auto;
+  width: 380px;
+}
+.runners-section-title {
+  margin: 0;
+  margin-bottom: 54px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  width: 355px;
+
+}
+.runners-section-text {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 34px;
+  padding-left: 30px;
+  border-left: 3px solid  #ffffff;
+}
+
+.runners-section-link {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 12px 20px;
+  background-color: rgba(255, 99, 71);
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+.runners-section-link:hover{
+  background-color: tomato;
+}
